@@ -55,6 +55,10 @@ under the License.
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/flink-shaded.git</developerConnection>
     </scm>
 
+    <modules>
+        <module>flink-shaded-guava-18</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
