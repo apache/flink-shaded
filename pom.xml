@@ -57,6 +57,7 @@ under the License.
 
     <modules>
         <module>flink-shaded-guava-18</module>
+        <module>flink-shaded-netty-4</module>
     </modules>
 
     <build>
