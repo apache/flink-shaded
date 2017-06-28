@@ -29,4 +29,4 @@ When using these dependencies it is recommended to work directly against the sha
 
 ## About
 
-Apache Flink is an open source project of The Apache Software Foundation (ASF).
+Apache Flink is an open source project of [The Apache Software Foundation](https://apache.org/) (ASF).
