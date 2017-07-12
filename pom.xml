@@ -52,7 +52,7 @@ under the License.
     <scm>
         <url>https://github.com/apache/flink-shaded</url>
         <connection>git@github.com:apache/flink-shaded.git</connection>
-        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/flink-shaded.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/apache/flink-shaded.git</developerConnection>
     </scm>
 
     <modules>
