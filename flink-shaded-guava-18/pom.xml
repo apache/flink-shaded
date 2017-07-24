@@ -29,9 +29,9 @@ under the License.
         <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>flink-shaded-guava-18</artifactId>
+    <artifactId>flink-shaded-guava</artifactId>
     <name>flink-shaded-guava-18</name>
-    <version>1.0-${guava.version}</version>
+    <version>${guava.version}-1.0</version>
 
     <packaging>jar</packaging>
 
