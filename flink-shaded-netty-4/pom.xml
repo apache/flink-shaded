@@ -29,9 +29,9 @@ under the License.
         <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>flink-shaded-netty-4</artifactId>
+    <artifactId>flink-shaded-netty</artifactId>
     <name>flink-shaded-netty-4</name>
-    <version>1.0-${netty.version}</version>
+    <version>${netty.version}-1.0</version>
 
     <properties>
         <!-- Don't upgrade for now. Netty versions >= 4.0.28.Final

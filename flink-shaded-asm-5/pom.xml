@@ -29,9 +29,9 @@ under the License.
         <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>flink-shaded-asm-5</artifactId>
+    <artifactId>flink-shaded-asm</artifactId>
     <name>flink-shaded-asm-5</name>
-    <version>1.0-${asm.version}</version>
+    <version>${asm.version}-1.0</version>
 
     <packaging>jar</packaging>
 
