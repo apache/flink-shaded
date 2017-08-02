@@ -30,11 +30,7 @@ under the License.
 
     <groupId>org.apache.flink</groupId>
     <artifactId>flink-shaded</artifactId>
-    <version>1.0</version>
-
-    <properties>
-        <shaded.version>1.0</shaded.version>
-    </properties>
+    <version>2.0</version>
 
     <name>flink-shaded</name>
     <packaging>pom</packaging>

@@ -31,7 +31,7 @@ under the License.
 
     <artifactId>flink-shaded-guava</artifactId>
     <name>flink-shaded-guava-18</name>
-    <version>${guava.version}-1.0</version>
+    <version>${guava.version}-2.0</version>
 
     <packaging>jar</packaging>
 

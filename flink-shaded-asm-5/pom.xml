@@ -31,7 +31,7 @@ under the License.
 
     <artifactId>flink-shaded-asm</artifactId>
     <name>flink-shaded-asm-5</name>
-    <version>${asm.version}-1.0</version>
+    <version>${asm.version}-2.0</version>
 
     <packaging>jar</packaging>
 

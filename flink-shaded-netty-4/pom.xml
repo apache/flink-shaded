@@ -31,7 +31,7 @@ under the License.
 
     <artifactId>flink-shaded-netty</artifactId>
     <name>flink-shaded-netty-4</name>
-    <version>${netty.version}-1.0</version>
+    <version>${netty.version}-2.0</version>
 
     <properties>
         <!-- Don't upgrade for now. Netty versions >= 4.0.28.Final
