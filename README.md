@@ -27,6 +27,12 @@ The shaded dependencies contained here do not expose any transitive dependencies
 
 When using these dependencies it is recommended to work directly against the shaded namespaces.
 
+## Sources
+
+We currently do not release jars containing the shaded sources due to the unanswered legal questions raised [here](https://github.com/apache/flink-shaded/issues/25).
+
+However, it is possible to build these jars locally by cloning the repository and calling `mvn package -Dshade-sources`.
+
 ## About
 
 Apache Flink is an open source project of [The Apache Software Foundation](https://apache.org/) (ASF).
