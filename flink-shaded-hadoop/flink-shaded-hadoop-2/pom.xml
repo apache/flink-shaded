@@ -86,36 +86,27 @@ under the License.
                                 </relocation>
                                 <relocation>
                                     <pattern>org.objectweb.asm</pattern>
-                                    <shadedPattern>
-                                        org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.objectweb.asm
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.objectweb.asm</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.jboss.netty</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.jboss.netty
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.jboss.netty</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.curator</pattern>
-                                    <shadedPattern>
-                                        org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.curator
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.curator</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.http</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.http
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.http</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.commons.httpclient</pattern>
-                                    <shadedPattern>
-                                        org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.commons.httpclient
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.apache.commons.httpclient</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.htrace</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.htrace
-                                    </shadedPattern>
+                                    <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.org.htrace</shadedPattern>
                                 </relocation>
                             </relocations>
                             <transformers>
