@@ -34,7 +34,10 @@ under the License.
     </properties>
 
     <artifactId>flink-shaded-hadoop-2</artifactId>
+    <name>flink-shaded-hadoop-2</name>
     <packaging>pom</packaging>
+    <version>2.0</version>
+
     <modules>
         <module>flink-shaded-hadoop-2.4</module>
         <module>flink-shaded-hadoop-2.6</module>

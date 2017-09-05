@@ -29,7 +29,10 @@ under the License.
     </parent>
 
     <artifactId>flink-shaded-hadoop-parent</artifactId>
+    <name>flink-shaded-hadoop-parent</name>
     <packaging>pom</packaging>
+    <version>2.0</version>
+
     <modules>
         <module>flink-shaded-hadoop-2</module>
     </modules>
