@@ -167,7 +167,7 @@ under the License.
                         </goals>
                         <configuration>
                             <outputDirectory>${basedir}/target/classes/META-INF/licenses/</outputDirectory>
-                            <resources>
+                            <resources combine.children="append">
                                 <resource>
                                     <directory>${basedir}/packaged_licenses</directory>
                                     <includes>

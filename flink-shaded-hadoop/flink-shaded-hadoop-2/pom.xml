@@ -79,6 +79,12 @@ under the License.
                                 </includes>
                             </artifactSet>
                             <relocations>
+                                <!-- IMPORTANT: Do NOT relocate the following dependencies or any of their transitive dependencies:
+                                    - javax.xml.bind:jaxb-api
+                                    - javax.xml.stream:stax-api
+                                    - javax.activation:activation
+                                    - com.sun.jersey:jersey-client
+                                -->
                                 <relocation>
                                     <pattern>com.google</pattern>
                                     <shadedPattern>org.apache.flink.shaded.hadoop${flink.shade.suffix}.com.google
@@ -123,6 +129,25 @@ under the License.
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
                             </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- add flink-shaded-hadoop2/packaged_licenses directory for shared licenses -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-packaged-licenses</id>
+                        <configuration>
+                            <resources>
+                                <resource>
+                                    <directory>${basedir}/../packaged_licenses</directory>
+                                    <includes>
+                                        <include>LICENSE.*.txt</include>
+                                    </includes>
+                                </resource>
+                            </resources>
                         </configuration>
                     </execution>
                 </executions>
