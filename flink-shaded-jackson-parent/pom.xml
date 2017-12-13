@@ -29,13 +29,19 @@ under the License.
         <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>flink-shaded-jackson</artifactId>
-    <name>flink-shaded-jackson-2</name>
+    <artifactId>flink-shaded-jackson-parent</artifactId>
+    <name>flink-shaded-jackson-parent</name>
+    <packaging>pom</packaging>
     <version>${jackson.version}-3.0</version>
 
     <properties>
         <jackson.version>2.7.9</jackson.version>
     </properties>
+
+    <modules>
+        <module>flink-shaded-jackson-2</module>
+        <module>flink-shaded-jackson-module-jsonSchema-2</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -72,7 +78,7 @@ under the License.
                             <dependencyReducedPomLocation>${project.basedir}/target/dependency-reduced-pom.xml</dependencyReducedPomLocation>
                             <artifactSet>
                                 <includes>
-                                    <include>com.fasterxml.jackson.core:*</include>
+                                    <include>com.fasterxml.jackson.*:*</include>
                                 </includes>
                             </artifactSet>
                             <relocations>
@@ -98,6 +104,5 @@ under the License.
             </plugin>
         </plugins>
     </build>
-
 
 </project>
