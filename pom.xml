@@ -56,7 +56,7 @@ under the License.
         <module>flink-shaded-asm-5</module>
         <module>flink-shaded-guava-18</module>
         <module>flink-shaded-netty-4</module>
-        <module>flink-shaded-jackson-2</module>
+        <module>flink-shaded-jackson-parent</module>
     </modules>
 
     <profiles>
