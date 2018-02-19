@@ -40,4 +40,31 @@ under the License.
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>shade-flink</id>
+                        <configuration>
+                            <artifactSet>
+                                <includes combine.children="append">
+                                    <include>javax.validation:validation-api</include>
+                                </includes>
+                            </artifactSet>
+                            <relocations combine.children="append">
+                                <relocation>
+                                    <pattern>javax.validation</pattern>
+                                    <shadedPattern>org.apache.flink.shaded.jackson2.javax.validation
+                                    </shadedPattern>
+                                </relocation>
+                            </relocations>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
