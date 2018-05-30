@@ -190,6 +190,8 @@ under the License.
                         <exclude>**/target/**</exclude>
                         <!-- the licenses that are re-bundled -->
                         <exclude>**/packaged_licenses/LICENSE.*.txt</exclude>
+                        <!-- release files -->
+                        <exclude>**/release/**</exclude>
                     </excludes>
                 </configuration>
             </plugin>
