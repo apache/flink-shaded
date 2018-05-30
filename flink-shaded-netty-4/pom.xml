@@ -62,7 +62,6 @@ under the License.
                             <dependencyReducedPomLocation>${project.basedir}/target/dependency-reduced-pom.xml</dependencyReducedPomLocation>
                             <artifactSet>
                                 <includes>
-                                    <include>tv.cntt:*</include>
                                     <include>io.netty:*</include>
                                 </includes>
                             </artifactSet>
@@ -70,10 +69,6 @@ under the License.
                                 <relocation>
                                     <pattern>io.netty</pattern>
                                     <shadedPattern>org.apache.flink.shaded.netty4.io.netty</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>jauter</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.netty4.jauter</shadedPattern>
                                 </relocation>
                             </relocations>
                             <transformers>
