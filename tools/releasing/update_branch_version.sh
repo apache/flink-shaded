@@ -53,7 +53,7 @@ fi
 cd ..
 
 #change version in all pom files
-find . -name 'pom.xml' -type f -exec perl -pi -e 's#<version>'$OLD_VERSION'</version>#<version>'$NEW_VERSION'</version>#' {} \;
+find . -name 'pom.xml' -type f -exec perl -pi -e 's#<version>'$OLD_VERSION'</version>#<version>'$NEW_VERSION'</version>#; s#-'$OLD_VERSION'</version>#-'$NEW_VERSION'</version>#' {} \;
 
 git commit -am "Update version to $NEW_VERSION"
 
