@@ -63,6 +63,18 @@ under the License.
 
     <profiles>
         <profile>
+            <id>include-netty-tcnative-static</id>
+            <activation>
+                <property>
+                    <name>include-netty-tcnative-static</name>
+                </property>
+            </activation>
+            <modules>
+                <module>flink-shaded-netty-tcnative-static</module>
+            </modules>
+        </profile>
+
+        <profile>
             <id>release</id>
             <build>
                 <plugins>
