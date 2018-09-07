@@ -50,6 +50,11 @@ under the License.
             <artifactId>jackson-dataformat-yaml</artifactId>
             <version>${jackson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-csv</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
