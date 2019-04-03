@@ -58,6 +58,7 @@ under the License.
         <module>flink-shaded-guava-18</module>
         <module>flink-shaded-netty-4</module>
         <module>flink-shaded-jackson-parent</module>
+        <module>flink-shaded-hadoop-2</module>
     </modules>
 
     <profiles>
