@@ -867,7 +867,7 @@ under the License.
 				<artifactId>maven-shade-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>shade-hadoop</id>
+						<id>shade-flink</id>
 						<phase>package</phase>
 						<goals>
 							<goal>shade</goal>
