@@ -49,6 +49,5 @@ HADOOP_MODULE="-pl flink-shaded-hadoop-2"
 HADOOP_VERSIONS=("2.4.1" "2.6.5" "2.7.5" "2.8.3")
 
 for i in "${!HADOOP_VERSIONS[@]}"; do
-echo "Deploying flink-shaded-hadoop $HADOOP_VERSIONS[$i] version"
-    $MVN clean deploy gs$COMMON_OPTIONS $HADOOP_MODULE "-Dhadoop.version=${HADOOP_VERSIONS[$i]}"
+    $MVN clean deploy $COMMON_OPTIONS $HADOOP_MODULE "-Dhadoop.version=${HADOOP_VERSIONS[$i]}"
 done
