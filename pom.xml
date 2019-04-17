@@ -59,6 +59,7 @@ under the License.
         <module>flink-shaded-netty-4</module>
         <module>flink-shaded-jackson-parent</module>
         <module>flink-shaded-hadoop-2</module>
+        <module>flink-shaded-hadoop-2-uber</module>
     </modules>
 
     <profiles>
