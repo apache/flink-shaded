@@ -919,42 +919,42 @@ under the License.
 							<relocations>
 								<relocation>
 									<pattern>com.google</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.com.google</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.com.google</shadedPattern>
 									<excludes>
 										<exclude>com.google.inject.**</exclude>
 									</excludes>
 								</relocation>
 								<relocation>
 									<pattern>org.objectweb.asm</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.objectweb.asm</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.objectweb.asm</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.jboss.netty</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.jboss.netty</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.jboss.netty</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>io.netty</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.io.netty</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.io.netty</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.apache.curator</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.apache.curator</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.apache.curator</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.apache.http</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.apache.http</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.apache.http</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.apache.commons.httpclient</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.apache.commons.httpclient</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.apache.commons.httpclient</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.htrace</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.htrace</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.htrace</shadedPattern>
 								</relocation>
 								<relocation>
 									<pattern>org.codehaus.jackson</pattern>
-									<shadedPattern>org.apache.flink.hadoop.shaded.org.codehaus.jackson</shadedPattern>
+									<shadedPattern>org.apache.flink.hadoop2.shaded.org.codehaus.jackson</shadedPattern>
 								</relocation>
 							</relocations>
 						</configuration>
