@@ -26,7 +26,7 @@ under the License.
 	<parent>
 		<groupId>org.apache.flink</groupId>
 		<artifactId>flink-shaded</artifactId>
-		<version>7.0</version>
+		<version>8.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -34,7 +34,7 @@ under the License.
 	<name>flink-shaded-hadoop-2-uber</name>
 
 	<packaging>jar</packaging>
-	<version>${hadoop.version}-7.0</version>
+	<version>${hadoop.version}-8.0</version>
 
 	<properties>
 		<hadoop.version>2.4.1</hadoop.version>
@@ -49,7 +49,7 @@ under the License.
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-shaded-hadoop-2</artifactId>
-			<version>${hadoop.version}-7.0</version>
+			<version>${hadoop.version}-8.0</version>
 		</dependency>
 	</dependencies>
 
