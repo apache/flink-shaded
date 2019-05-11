@@ -63,6 +63,10 @@ under the License.
     </modules>
 
     <profiles>
+        <!--
+            This module is excluded by default since it is not compliant with
+            the apache license. https://issues.apache.org/jira/browse/LEGAL-393
+        -->
         <profile>
             <id>include-netty-tcnative-static</id>
             <activation>
