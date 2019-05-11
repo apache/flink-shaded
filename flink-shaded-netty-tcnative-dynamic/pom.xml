@@ -91,7 +91,7 @@ under the License.
                 </executions>
                 <configuration>
                     <artifactItems>
-                        <!-- native wrapper libraries linked dynamically to OpenSSL - we will extract and these below-->
+                        <!-- native wrapper libraries linked dynamically to OpenSSL - we will extract, rename, and include these below-->
                         <artifactItem>
                             <groupId>io.netty</groupId>
                             <artifactId>netty-tcnative</artifactId>
