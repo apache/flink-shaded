@@ -1044,7 +1044,7 @@ under the License.
 							<relocations>
 								<relocation>
 									<pattern>com.google</pattern>
-									<shadedPattern>org.apache.flink.hadoop2.shaded.com.google</shadedPattern>
+									<shadedPattern>org.apache.flink.shaded.hadoop2.com.google</shadedPattern>
 									<excludes>
 										<exclude>com.google.inject.**</exclude>
 									</excludes>
