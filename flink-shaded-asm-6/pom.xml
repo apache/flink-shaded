@@ -84,7 +84,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>org.objectweb</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.asm6.org.objectweb</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.asm6.org.objectweb</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

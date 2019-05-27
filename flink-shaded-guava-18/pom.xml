@@ -70,7 +70,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>com.google</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.guava18.com.google</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.guava18.com.google</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

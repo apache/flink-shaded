@@ -68,7 +68,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>io.netty</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.netty4.io.netty</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.netty4.io.netty</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

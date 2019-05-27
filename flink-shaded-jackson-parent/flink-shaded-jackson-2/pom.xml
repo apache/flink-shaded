@@ -74,7 +74,7 @@ under the License.
                             <relocations combine.children="append">
                                 <relocation>
                                     <pattern>org.yaml</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.jackson2.org.yaml
+                                    <shadedPattern>${shading.prefix}.jackson2.org.yaml
                                     </shadedPattern>
                                 </relocation>
                             </relocations>

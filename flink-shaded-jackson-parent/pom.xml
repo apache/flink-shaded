@@ -86,7 +86,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>com.fasterxml.jackson</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.jackson2.com.fasterxml.jackson</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.jackson2.com.fasterxml.jackson</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

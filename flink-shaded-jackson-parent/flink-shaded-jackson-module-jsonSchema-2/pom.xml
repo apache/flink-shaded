@@ -69,7 +69,7 @@ under the License.
                             <relocations combine.children="append">
                                 <relocation>
                                     <pattern>javax.validation</pattern>
-                                    <shadedPattern>org.apache.flink.shaded.jackson2.javax.validation
+                                    <shadedPattern>${shading.prefix}.jackson2.javax.validation
                                     </shadedPattern>
                                 </relocation>
                             </relocations>

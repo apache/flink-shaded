@@ -51,6 +51,10 @@ under the License.
         <developerConnection>scm:git:https://github.com/apache/flink-shaded.git</developerConnection>
     </scm>
 
+    <properties>
+        <shading.prefix>org.apache.flink.shaded</shading.prefix>
+    </properties>
+
     <modules>
         <module>flink-shaded-force-shading</module>
         <module>flink-shaded-asm-6</module>
