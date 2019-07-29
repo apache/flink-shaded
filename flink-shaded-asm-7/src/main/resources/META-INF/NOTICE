@@ -7,6 +7,6 @@ The Apache Software Foundation (http://www.apache.org/).
 This project bundles the following dependencies under the BSD license.
 See bundled license files for details.
 
-- org.ow2.asm:asm:6.2.1
-- org.ow2.asm:asm-analysis:6.2.1
-- org.ow2.asm:asm-tree:6.2.1
+- org.ow2.asm:asm:7.1
+- org.ow2.asm:asm-analysis:7.1
+- org.ow2.asm:asm-tree:7.1
