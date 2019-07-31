@@ -200,6 +200,11 @@ under the License.
 			<version>${hadoop.version}</version>
 			<exclusions>
 				<exclusion>
+					<!-- This dependency is no longer shipped with the JDK since Java 9.-->
+					<groupId>jdk.tools</groupId>
+					<artifactId>jdk.tools</artifactId>
+				</exclusion>
+				<exclusion>
 					<groupId>asm</groupId>
 					<artifactId>asm</artifactId>
 				</exclusion>
