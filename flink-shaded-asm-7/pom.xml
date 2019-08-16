@@ -90,7 +90,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>org.objectweb</pattern>
-                                    <shadedPattern>${shading.prefix}.asm7.org.objectweb</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.asm${asm.major.version}.org.objectweb</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
