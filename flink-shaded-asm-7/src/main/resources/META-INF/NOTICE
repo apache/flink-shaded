@@ -9,4 +9,5 @@ See bundled license files for details.
 
 - org.ow2.asm:asm:7.1
 - org.ow2.asm:asm-analysis:7.1
+- org.ow2.asm:asm-commons:7.1
 - org.ow2.asm:asm-tree:7.1
