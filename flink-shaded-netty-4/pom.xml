@@ -34,7 +34,7 @@ under the License.
     <version>${netty.version}-8.0</version>
 
     <properties>
-        <netty.version>4.1.32.Final</netty.version>
+        <netty.version>4.1.39.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -91,6 +91,11 @@ under the License.
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
                                     <mapper type="glob" from="libnetty_transport_native_epoll_x86_64.so" to="liborg_apache_flink_shaded_netty4_netty_transport_native_epoll_x86_64.so"/>
+                                </move>
+                                <echo message="renaming native kqueue library" />
+                                <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
+                                    <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
+                                    <mapper type="glob" from="libnetty_transport_native_kqueue_x86_64.jnilib" to="liborg_apache_flink_shaded_netty4_netty_transport_native_kqueue_x86_64.jnilib"/>
                                 </move>
                                 <echo message="repackaging netty jar" />
                                 <jar destfile="${project.build.directory}/${artifactId}-${version}.jar" basedir="${project.build.directory}/unpacked" />
