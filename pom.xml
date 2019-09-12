@@ -82,7 +82,50 @@ under the License.
                 <module>flink-shaded-netty-tcnative-static</module>
             </modules>
         </profile>
-
+        <profile>
+            <id>vendor-repos</id>
+            <activation>
+                <property>
+                    <name>vendor-repos</name>
+                </property>
+            </activation>
+            <!-- Add vendor maven repositories -->
+            <repositories>
+                <!-- Cloudera -->
+                <repository>
+                    <id>cloudera-releases</id>
+                    <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <!-- Hortonworks -->
+                <repository>
+                    <id>HDPReleases</id>
+                    <name>HDP Releases</name>
+                    <url>https://repo.hortonworks.com/content/repositories/releases/</url>
+                    <snapshots><enabled>false</enabled></snapshots>
+                    <releases><enabled>true</enabled></releases>
+                </repository>
+                <repository>
+                    <id>HortonworksJettyHadoop</id>
+                    <name>HDP Jetty</name>
+                    <url>https://repo.hortonworks.com/content/repositories/jetty-hadoop</url>
+                    <snapshots><enabled>false</enabled></snapshots>
+                    <releases><enabled>true</enabled></releases>
+                </repository>
+                <!-- MapR -->
+                <repository>
+                    <id>mapr-releases</id>
+                    <url>https://repository.mapr.com/maven/</url>
+                    <snapshots><enabled>false</enabled></snapshots>
+                    <releases><enabled>true</enabled></releases>
+                </repository>
+            </repositories>
+        </profile>
         <profile>
             <id>release</id>
             <build>
