@@ -158,7 +158,6 @@ under the License.
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-shade-plugin</artifactId>
-                            <version>3.1.1</version>
                             <configuration combine.children="append">
                                 <createSourcesJar>true</createSourcesJar>
                                 <shadeSourcesContent>true</shadeSourcesContent>
@@ -176,7 +175,7 @@ under the License.
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-shade-plugin</artifactId>
-                    <version>3.0.0</version>
+                    <version>3.1.1</version>
                     <configuration>
                         <transformers>
                             <!-- The service transformer is needed to merge META-INF/services files -->
