@@ -35,7 +35,7 @@ if [[ `basename $CURR_DIR` != "tools" ]] ; then
 fi
 
 ###########################
-EXCLUDE_HADOOP_MODULE="-pl !flink-shaded-hadoop-2,!flink-shaded-hadoop-2-uber"
+EXCLUDE_HADOOP_MODULE="-pl !flink-shaded-hadoop-2-parent/flink-shaded-hadoop-2,!flink-shaded-hadoop-2-parent/flink-shaded-hadoop-2-uber"
 
 COMMON_OPTIONS="-Prelease -DskipTests -DretryFailedDeploymentCount=10 "
 
@@ -45,7 +45,7 @@ echo "Deploying to repository.apache.org"
 $MVN clean deploy $COMMON_OPTIONS $EXCLUDE_HADOOP_MODULE
 
 
-HADOOP_MODULE="-pl flink-shaded-hadoop-2,flink-shaded-hadoop-2-uber"
+HADOOP_MODULE="-pl flink-shaded-hadoop-2-parent/flink-shaded-hadoop-2,flink-shaded-hadoop-2-parent/flink-shaded-hadoop-2-uber"
 
 HADOOP_VERSIONS=("2.4.1" "2.6.5" "2.7.5" "2.8.3")
 
