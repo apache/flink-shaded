@@ -60,7 +60,7 @@ under the License.
                         asm,
                         netty
                     here. It will overwrite Hadoop's guava dependency (even though we handle it
-            separatly in this module).
+            separately in this module).
         -->
         <dependencies>
             <dependency>
