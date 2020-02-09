@@ -26,7 +26,7 @@ under the License.
 	<parent>
 		<groupId>org.apache.flink</groupId>
 		<artifactId>flink-shaded-hadoop-2-parent</artifactId>
-		<version>10.0</version>
+		<version>11.0</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -34,7 +34,7 @@ under the License.
 	<name>flink-shaded-hadoop-2-uber</name>
 
 	<packaging>jar</packaging>
-	<version>${hadoop.version}-10.0</version>
+	<version>${hadoop.version}-11.0</version>
 
 	<!--
 		the only dependency of the 'flink-shaded-hadoop-2' artifact, out
@@ -45,7 +45,7 @@ under the License.
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-shaded-hadoop-2</artifactId>
-			<version>${hadoop.version}-10.0</version>
+			<version>${hadoop.version}-11.0</version>
 		</dependency>
 	</dependencies>
 

@@ -25,14 +25,14 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
-        <version>10.0</version>
+        <version>11.0</version>
         <relativePath>..</relativePath>
     </parent>
 
     <artifactId>flink-shaded-hadoop-2-parent</artifactId>
     <name>flink-shaded-hadoop-2-parent</name>
     <packaging>pom</packaging>
-    <version>10.0</version>
+    <version>11.0</version>
 
     <properties>
         <!-- never use this in the parent module; otherwise it would need to be versioned by hadoop version; this must
