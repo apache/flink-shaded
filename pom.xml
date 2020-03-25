@@ -205,7 +205,7 @@ under the License.
                     <executions>
                         <execution>
                             <id>flatten</id>
-                            <phase>none</phase>
+                            <phase>package</phase>
                             <goals>
                                 <goal>flatten</goal>
                             </goals>
