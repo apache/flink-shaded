@@ -213,7 +213,7 @@ under the License.
                                 <!-- The least invasive mode that effectively only resolves variables -->
                                 <flattenMode>resolveCiFriendliesOnly</flattenMode>
                                 <!-- By default the resulting pom is written into the modules base directory to work around MNG-6405.
-                                    We aren't affected, os we use the proper location. -->
+                                    We aren't affected, so we use the proper location. -->
                                 <outputDirectory>${project.build.directory}</outputDirectory>
                             </configuration>
                         </execution>
