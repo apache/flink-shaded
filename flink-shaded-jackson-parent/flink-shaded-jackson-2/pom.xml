@@ -82,6 +82,12 @@ under the License.
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <!-- Used to resolve variables in the 'version' tag -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+            </plugin>
         </plugins>
     </build>
 </project>
