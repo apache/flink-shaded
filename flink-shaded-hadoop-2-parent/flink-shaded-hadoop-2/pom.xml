@@ -605,10 +605,6 @@ under the License.
 					<artifactId>core</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>org.apache.hadoop</groupId>
-					<artifactId>hadoop-yarn-common</artifactId>
-				</exclusion>
-				<exclusion>
 					<groupId>com.google.inject.extensions</groupId>
 					<artifactId>guice-servlet</artifactId>
 				</exclusion>
@@ -617,20 +613,8 @@ under the License.
 					<artifactId>netty</artifactId>
 				</exclusion>
 				<exclusion>
-					<groupId>com.sun.jersey</groupId>
-					<artifactId>jersey-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jersey</groupId>
-					<artifactId>jersey-json</artifactId>
-				</exclusion>
-				<exclusion>
 					<groupId>org.codehaus.jettison</groupId>
 					<artifactId>jettison</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jersey</groupId>
-					<artifactId>jersey-server</artifactId>
 				</exclusion>
 				<exclusion>
 					<groupId>tomcat</groupId>
@@ -679,10 +663,6 @@ under the License.
 				<exclusion>
 					<groupId>org.glassfish</groupId>
 					<artifactId>javax.servlet</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.sun.jersey.contribs</groupId>
-					<artifactId>jersey-guice</artifactId>
 				</exclusion>
 				<exclusion>
 					<groupId>com.google.inject</groupId>
