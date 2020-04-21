@@ -63,6 +63,7 @@ trap 'cd ${CURR_DIR};rm -rf release' ERR
 
 rsync -a \
   --exclude ".git" --exclude ".gitignore" --exclude ".gitattributes" \
+  --exclude ".asf.yaml" \
   --exclude "deploysettings.xml" --exclude "target" \
   --exclude ".idea" --exclude "*.iml" --exclude ".DS_Store" \
   . flink-shaded-$RELEASE_VERSION
