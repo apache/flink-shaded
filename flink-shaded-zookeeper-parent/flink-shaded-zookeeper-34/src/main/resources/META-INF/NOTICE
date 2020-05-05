@@ -10,4 +10,4 @@ This project bundles the following dependencies under the Apache Software Licens
 - org.apache.curator:curator-client:4.2.0
 - org.apache.curator:curator-framework:4.2.0
 - org.apache.curator:curator-recipes:4.2.0
-- org.apache.zookeeper:zookeeper:3.4.10
+- org.apache.zookeeper:zookeeper:3.4.14
