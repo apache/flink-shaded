@@ -23,7 +23,7 @@ This repository contains a number of shaded dependencies for the [Apache Flink](
 
 The purpose of these dependencies is to provide a single instance of a shaded dependency in the Flink distribution, instead of each individual module shading the dependency.
 
-With the exception of `flink-shaded-hadoop-2`, shaded dependencies contained here do not expose any transitive dependencies. They may or may not be self-contained.
+Shaded dependencies contained here do not expose any transitive dependencies. They may or may not be self-contained.
 
 When using these dependencies it is recommended to work directly against the shaded namespaces.
 
