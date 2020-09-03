@@ -34,7 +34,7 @@ under the License.
     <version>${netty.tcnative.version}-12.0</version>
 
     <properties>
-        <netty.tcnative.version>2.0.25.Final</netty.tcnative.version>
+        <netty.tcnative.version>2.0.30.Final</netty.tcnative.version>
     </properties>
 
     <dependencies>
