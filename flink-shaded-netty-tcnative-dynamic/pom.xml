@@ -25,13 +25,13 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
-        <version>13.0</version>
+        <version>14.0</version>
         <relativePath>..</relativePath>
     </parent>
 
     <artifactId>flink-shaded-netty-tcnative-dynamic</artifactId>
     <name>flink-shaded-netty-tcnative-dynamic</name>
-    <version>${netty.tcnative.version}-13.0</version>
+    <version>${netty.tcnative.version}-14.0</version>
 
     <properties>
         <netty.tcnative.version>2.0.30.Final</netty.tcnative.version>
