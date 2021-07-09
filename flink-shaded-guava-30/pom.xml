@@ -30,7 +30,7 @@ under the License.
     </parent>
 
     <artifactId>flink-shaded-guava</artifactId>
-    <name>flink-shaded-guava-18</name>
+    <name>flink-shaded-guava-30</name>
     <version>${guava.version}-14.0</version>
 
     <packaging>jar</packaging>
