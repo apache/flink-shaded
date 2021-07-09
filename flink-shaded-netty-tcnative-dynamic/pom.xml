@@ -34,7 +34,8 @@ under the License.
     <version>${netty.tcnative.version}-14.0</version>
 
     <properties>
-        <netty.tcnative.version>2.0.30.Final</netty.tcnative.version>
+        <!-- This is based on the "tcnative.version" property in the netty root pom-->
+        <netty.tcnative.version>2.0.39.Final</netty.tcnative.version>
     </properties>
 
     <dependencies>
@@ -123,7 +124,7 @@ under the License.
                             <groupId>io.netty</groupId>
                             <artifactId>netty-tcnative</artifactId>
                             <version>${netty.tcnative.version}</version>
-                            <classifier>windows-x86_64</classifier>
+                            <classifier>linux-aarch_64-fedora</classifier>
                             <type>jar</type>
                             <overWrite>false</overWrite>
                             <outputDirectory>${project.build.directory}/native_libs</outputDirectory>
@@ -146,27 +147,18 @@ under the License.
                                 <echo message="extracting netty_tcnative dynamically linked wrapper libraries" />
                                 <!-- Fix the dynamically linked native libraries in netty-tcnative -->
                                 <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
+                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-osx-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
+                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-aarch_64-fedora.jar" dest="${project.build.directory}/native_libs/unpacked/" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
-                                    <mapper type="glob" from="libnetty_tcnative.so" to="liborg_apache_flink_shaded_netty4_netty_tcnative_linux_x86_64.so"/>
+                                    <mapper type="glob" from="lib*" to="liborg_apache_flink_shaded_netty4_*"/>
                                 </move>
                                 <delete dir="${project.build.directory}/native_libs/unpacked/" />
+                                <!-- the fedora linux .so file has the same name as the one for plain linux, so we need to separately extract, relocate and move it -->
                                 <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-x86_64-fedora.jar" dest="${project.build.directory}/native_libs/unpacked/" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
-                                    <mapper type="glob" from="libnetty_tcnative.so" to="liborg_apache_flink_shaded_netty4_netty_tcnative_linux_x86_64_fedora.so"/>
-                                </move>
-                                <delete dir="${project.build.directory}/native_libs/unpacked/" />
-                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-osx-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
-                                <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
-                                    <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
-                                    <mapper type="glob" from="libnetty_tcnative.jnilib" to="liborg_apache_flink_shaded_netty4_netty_tcnative_osx_x86_64.jnilib"/>
-                                </move>
-                                <delete dir="${project.build.directory}/native_libs/unpacked/" />
-                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-windows-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
-                                <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
-                                    <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
-                                    <mapper type="glob" from="netty_tcnative.dll" to="org_apache_flink_shaded_netty4_netty_tcnative_windows_x86_64.dll"/>
+                                    <mapper type="glob" from="lib*.so" to="liborg_apache_flink_shaded_netty4_*_fedora.so"/>
                                 </move>
                                 <delete dir="${project.build.directory}/native_libs/unpacked/" />
                                 <echo message="repackaging netty jar" />
