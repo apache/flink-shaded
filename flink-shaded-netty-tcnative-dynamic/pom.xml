@@ -154,7 +154,7 @@ under the License.
                                     <mapper type="glob" from="lib*" to="liborg_apache_flink_shaded_netty4_*"/>
                                 </move>
                                 <delete dir="${project.build.directory}/native_libs/unpacked/" />
-                                <!-- the fedora linux .so file has the same name as the one for plain linux, so we need to separately extract, relocate and copy it -->
+                                <!-- the fedora linux .so file has the same name as the one for plain linux, so we need to separately extract, relocate and move it -->
                                 <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-x86_64-fedora.jar" dest="${project.build.directory}/native_libs/unpacked/" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
