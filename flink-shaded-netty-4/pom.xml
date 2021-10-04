@@ -33,10 +33,6 @@ under the License.
     <name>flink-shaded-netty-4</name>
     <version>${netty.version}-15.0</version>
 
-    <properties>
-        <netty.version>4.1.65.Final</netty.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
