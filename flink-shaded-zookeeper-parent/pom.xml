@@ -39,8 +39,8 @@ under the License.
     </modules>
 
     <properties>
-        <shading.zookeeper.prefix>org.apache.flink.shaded.zookeeper3</shading.zookeeper.prefix>
-        <shading.curator.prefix>org.apache.flink.shaded.curator4</shading.curator.prefix>
+        <shading.zookeeper.prefix>${shading.prefix}.zookeeper3</shading.zookeeper.prefix>
+        <shading.curator.prefix>${shading.prefix}.curator4</shading.curator.prefix>
     </properties>
 
     <build>
