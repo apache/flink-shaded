@@ -297,6 +297,7 @@ under the License.
                     <excludes>
                         <!-- GitHub infrastructure -->
                         <exclude>.asf.yaml</exclude>
+                        <exclude>.github/**</exclude>
                         <!-- Build files -->
                         <exclude>**/*.iml</exclude>
                         <!-- Generated content -->
