@@ -85,6 +85,7 @@ under the License.
                             </artifactSet>
                             <relocations>
                                 <relocation>
+                                    <!-- This needs to match flink-shaded-swagger -->
                                     <pattern>com.fasterxml.jackson</pattern>
                                     <shadedPattern>${shading.prefix}.jackson2.com.fasterxml.jackson</shadedPattern>
                                 </relocation>
