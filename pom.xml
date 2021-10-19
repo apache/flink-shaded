@@ -64,6 +64,7 @@ under the License.
         <module>flink-shaded-netty-tcnative-dynamic</module>
         <module>flink-shaded-jackson-parent</module>
         <module>flink-shaded-zookeeper-parent</module>
+        <module>flink-shaded-swagger</module>
     </modules>
 
     <profiles>
