@@ -15,8 +15,8 @@ This project bundles the following dependencies under the Apache Software Licens
 - io.netty:netty-transport:4.1.70.Final
 - io.netty:netty-transport-native-epoll:4.1.70.Final
 - io.netty:netty-transport-native-unix-common:4.1.70.Final
-- org.apache.curator:curator-client:4.2.0
-- org.apache.curator:curator-framework:4.2.0
-- org.apache.curator:curator-recipes:4.2.0
+- org.apache.curator:curator-client:5.2.0
+- org.apache.curator:curator-framework:5.2.0
+- org.apache.curator:curator-recipes:5.2.0
 - org.apache.zookeeper:zookeeper:3.5.9
 - org.apache.zookeeper:zookeeper-jute:3.5.9

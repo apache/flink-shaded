@@ -39,7 +39,7 @@ under the License.
 
     <properties>
         <shading.zookeeper.prefix>${shading.prefix}.zookeeper3</shading.zookeeper.prefix>
-        <shading.curator.prefix>${shading.prefix}.curator4</shading.curator.prefix>
+        <shading.curator.prefix>${shading.prefix}.curator5</shading.curator.prefix>
     </properties>
 
     <build>
