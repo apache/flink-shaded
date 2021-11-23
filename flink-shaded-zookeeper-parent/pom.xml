@@ -34,7 +34,6 @@ under the License.
     <packaging>pom</packaging>
 
     <modules>
-        <module>flink-shaded-zookeeper-34</module>
         <module>flink-shaded-zookeeper-35</module>
     </modules>
 
