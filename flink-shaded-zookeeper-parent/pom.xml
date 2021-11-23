@@ -68,7 +68,6 @@ under the License.
                                     <shadedPattern>${shading.zookeeper.prefix}.org.apache.zookeeper</shadedPattern>
                                 </relocation>
                                 <relocation>
-                                    <!-- This allows us to re-use flink-shaded-netty -->
                                     <pattern>io.netty</pattern>
                                     <shadedPattern>${shading.zookeeper.prefix}.io.netty</shadedPattern>
                                 </relocation>
