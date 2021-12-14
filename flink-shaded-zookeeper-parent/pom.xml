@@ -35,6 +35,7 @@ under the License.
 
     <modules>
         <module>flink-shaded-zookeeper-35</module>
+        <module>flink-shaded-zookeeper-36</module>
     </modules>
 
     <properties>
@@ -74,6 +75,10 @@ under the License.
                                 <relocation>
                                     <pattern>org.apache.jute</pattern>
                                     <shadedPattern>${shading.zookeeper.prefix}.org.apache.jute</shadedPattern>
+                                </relocation>
+                                <relocation>
+                                    <pattern>com.codahale.metrics</pattern>
+                                    <shadedPattern>${shading.zookeeper.prefix}.com.codahale.metrics</shadedPattern>
                                 </relocation>
                                 <relocation>
                                     <pattern>org.apache.curator</pattern>
