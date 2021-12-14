@@ -25,13 +25,13 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded-zookeeper-parent</artifactId>
-        <version>15.0</version>
+        <version>16.0</version>
         <relativePath>..</relativePath>
     </parent>
 
     <artifactId>flink-shaded-zookeeper-3</artifactId>
     <name>flink-shaded-zookeeper-3.5</name>
-    <version>${zookeeper.version}-15.0</version>
+    <version>${zookeeper.version}-16.0</version>
 
     <properties>
         <zookeeper.version>3.5.9</zookeeper.version>
