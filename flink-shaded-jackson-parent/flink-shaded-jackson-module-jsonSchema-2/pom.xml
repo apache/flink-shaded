@@ -48,7 +48,6 @@ under the License.
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-jsonSchema</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
