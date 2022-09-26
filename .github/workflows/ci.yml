@@ -5,12 +5,24 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      MVN_COMMON_OPTIONS: -U -B --no-transfer-progress
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 1.8
-        uses: actions/setup-java@v1
+
+      - name: Set JDK
+        uses: actions/setup-java@v2
         with:
-          java-version: 1.8
+          java-version: 8
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Set Maven 3.8.6
+        uses: stCarolas/setup-maven@v4.2
+        with:
+          maven-version: 3.8.6
+
       - name: Build
-        run: mvn clean install -B
+        run: mvn clean install ${{ env.MVN_COMMON_OPTIONS }}
+          -DaltDeploymentRepository=validation_repository::default::file:${{ env.MVN_VALIDATION_DIR }} \
