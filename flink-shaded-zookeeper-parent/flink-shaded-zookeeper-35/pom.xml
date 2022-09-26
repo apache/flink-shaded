@@ -28,7 +28,7 @@ under the License.
         <version>16.0</version>
     </parent>
 
-    <artifactId>flink-shaded-zookeeper-3</artifactId>
+    <artifactId>flink-shaded-zookeeper-3${flink.ci.license.suffix}</artifactId>
     <name>flink-shaded-zookeeper-3.5</name>
     <version>${zookeeper.version}-16.0</version>
 
@@ -124,4 +124,13 @@ under the License.
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <profiles>
+        <profile>
+            <id>license-check</id>
+            <properties>
+                <flink.ci.license.suffix>5</flink.ci.license.suffix>
+            </properties>
+        </profile>
+    </profiles>
 </project>

@@ -40,6 +40,15 @@ under the License.
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>license-check</id>
+            <properties>
+                <flink.ci.license.suffix>-4</flink.ci.license.suffix>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
