@@ -26,7 +26,6 @@ under the License.
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
         <version>16.0</version>
-        <relativePath>..</relativePath>
     </parent>
 
     <artifactId>flink-shaded-guava</artifactId>

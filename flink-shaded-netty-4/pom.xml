@@ -26,10 +26,9 @@ under the License.
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
         <version>16.0</version>
-        <relativePath>..</relativePath>
     </parent>
 
-    <artifactId>flink-shaded-netty</artifactId>
+    <artifactId>flink-shaded-netty${flink.ci.license.suffix}</artifactId>
     <name>flink-shaded-netty-4</name>
     <version>${netty.version}-16.0</version>
 
