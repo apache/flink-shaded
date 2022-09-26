@@ -7,7 +7,7 @@ The Apache Software Foundation (http://www.apache.org/).
 This project bundles the following dependencies under the BSD license.
 See bundled license files for details.
 
-- org.ow2.asm:asm:9.2
-- org.ow2.asm:asm-analysis:9.2
-- org.ow2.asm:asm-commons:9.2
-- org.ow2.asm:asm-tree:9.2
+- org.ow2.asm:asm:9.3
+- org.ow2.asm:asm-analysis:9.3
+- org.ow2.asm:asm-commons:9.3
+- org.ow2.asm:asm-tree:9.3
