@@ -31,11 +31,7 @@ under the License.
     <artifactId>flink-shaded-jackson-parent</artifactId>
     <name>flink-shaded-jackson-parent</name>
     <packaging>pom</packaging>
-    <version>2.12.4-16.0</version>
-
-    <properties>
-        <jackson.version>2.12.4</jackson.version>
-    </properties>
+    <version>2.13.4-16.0</version>
 
     <modules>
         <module>flink-shaded-jackson-2</module>
