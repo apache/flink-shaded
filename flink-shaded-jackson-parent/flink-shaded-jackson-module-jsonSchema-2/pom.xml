@@ -28,7 +28,7 @@ under the License.
         <version>2.12.4-16.0</version>
     </parent>
 
-    <artifactId>flink-shaded-jackson-module-jsonSchema</artifactId>
+    <artifactId>flink-shaded-jackson-module-jsonSchema${flink.ci.license.suffix}</artifactId>
     <name>flink-shaded-jackson-module-jsonSchema-2</name>
 
     <dependencies>
@@ -49,6 +49,15 @@ under the License.
             <artifactId>jackson-module-jsonSchema</artifactId>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>license-check</id>
+            <properties>
+                <flink.ci.license.suffix>-2</flink.ci.license.suffix>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>

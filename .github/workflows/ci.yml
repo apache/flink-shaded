@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MVN_COMMON_OPTIONS: -U -B --no-transfer-progress
+      MVN_BUILD_OUTPUT_FILE: "/tmp/mvn_build_output.out"
+      MVN_VALIDATION_DIR: "/tmp/flink-validation-deployment"
 
     steps:
       - uses: actions/checkout@v2
@@ -39,5 +41,16 @@ jobs:
           maven-version: 3.8.6
 
       - name: Build
-        run: mvn clean install ${{ env.MVN_COMMON_OPTIONS }}
-          -DaltDeploymentRepository=validation_repository::default::file:${{ env.MVN_VALIDATION_DIR }} \
+        run: |
+          set -o pipefail
+
+          mvn clean deploy ${{ env.MVN_COMMON_OPTIONS }} \
+            -DaltDeploymentRepository=validation_repository::default::file:${{ env.MVN_VALIDATION_DIR }} \
+             -Plicense-check \
+            | tee ${{ env.MVN_BUILD_OUTPUT_FILE }}
+
+      - name: Check licensing
+        run: |
+          mvn ${MVN_COMMON_OPTIONS} exec:java@check-licensing -N \
+            -Dexec.args="${{ env.MVN_BUILD_OUTPUT_FILE }} $(pwd) ${{ env.MVN_VALIDATION_DIR }}" \
+            -Dlog4j.configurationFile=file://$(pwd)/tools/ci/log4j.properties
