@@ -25,11 +25,11 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
-        <version>16.0</version>
+        <version>17.0</version>
     </parent>
 
     <artifactId>flink-shaded-asm-${asm.major.version}</artifactId>
-    <version>${asm.version}-16.0</version>
+    <version>${asm.version}-17.0</version>
 
     <packaging>jar</packaging>
 
