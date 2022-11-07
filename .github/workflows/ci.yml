@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      MVN_COMMON_OPTIONS: -U -B --no-transfer-progress
+      MVN_COMMON_OPTIONS: -U -B --no-transfer-progress -Pinclude-netty-tcnative-static
       MVN_BUILD_OUTPUT_FILE: "/tmp/mvn_build_output.out"
       MVN_VALIDATION_DIR: "/tmp/flink-validation-deployment"
 
