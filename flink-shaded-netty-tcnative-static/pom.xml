@@ -63,6 +63,7 @@ under the License.
                             <dependencyReducedPomLocation>${project.basedir}/target/dependency-reduced-pom.xml</dependencyReducedPomLocation>
                             <artifactSet>
                                 <includes>
+                                    <include>io.netty:netty-tcnative-classes</include>
                                     <include>io.netty:netty-tcnative-boringssl-static</include>
                                 </includes>
                             </artifactSet>
