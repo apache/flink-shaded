@@ -25,7 +25,7 @@ under the License.
     <parent>
         <artifactId>flink-shaded</artifactId>
         <groupId>org.apache.flink</groupId>
-        <version>16.0</version>
+        <version>16.1</version>
     </parent>
 
     <artifactId>flink-shaded-force-shading</artifactId>
