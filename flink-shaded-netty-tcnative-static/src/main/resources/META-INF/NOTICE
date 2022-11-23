@@ -7,6 +7,11 @@ The Apache Software Foundation (http://www.apache.org/).
 This project bundles the following dependencies under the Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 - io.netty:netty-tcnative-boringssl-static:2.0.54.Final
+- io.netty:netty-tcnative-boringssl-static:linux-aarch_64:2.0.54.Final
+- io.netty:netty-tcnative-boringssl-static:linux-x86_64:2.0.54.Final
+- io.netty:netty-tcnative-boringssl-static:osx-aarch_64:2.0.54.Final
+- io.netty:netty-tcnative-boringssl-static:osx-x86_64:2.0.54.Final
+- io.netty:netty-tcnative-boringssl-static:windows-x86_64:2.0.54.Final
 - io.netty:netty-tcnative-classes:2.0.54.Final
 
 This project bundles the following dependencies under the OpenSSL license.
