@@ -87,12 +87,12 @@ under the License.
                         <phase>package</phase>
                         <configuration>
                             <target>
-                                <echo message="unpacking netty jar" />
+                                <echo message="unpacking static tcnative netty jar" />
                                 <unzip src="${project.build.directory}/${artifactId}-${version}.jar" dest="${project.build.directory}/unpacked/" />
                                 <echo message="renaming netty_tcnative library" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
-                                    <mapper type="regexp" from="(lib)?netty_tcnative_(linux_x86_64.so|linux_aarch_64.so|osx_x86_64.jnilib|windows_x86_64.dll)" to="\1org_apache_flink_shaded_netty4_netty_tcnative_\2"/>
+                                    <mapper type="regexp" from="(lib)?netty_tcnative_(.*)" to="\1org_apache_flink_shaded_netty4_netty_tcnative_\2"/>
                                 </move>
                                 <echo message="repackaging netty jar" />
                                 <jar destfile="${project.build.directory}/${artifactId}-${version}.jar" basedir="${project.build.directory}/unpacked" />
