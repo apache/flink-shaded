@@ -35,7 +35,7 @@ under the License.
     <packaging>jar</packaging>
 
     <properties>
-        <guava.version>30.1.1-jre</guava.version>
+        <guava.version>31.1-jre</guava.version>
     </properties>
 
     <dependencies>
