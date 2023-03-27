@@ -63,7 +63,7 @@ under the License.
     <properties>
         <shading.prefix>org.apache.flink.shaded</shading.prefix>
         <netty.version>4.1.90.Final</netty.version>
-        <jackson.version>2.13.4.20221013</jackson.version>
+        <jackson.version>2.14.2</jackson.version>
         <!-- The license check requires the artifactId to match the directory that the module resides in.
              This is not the case for several modules in flink-shaded for legacy reasons.
              This property can be used by modules to add a suffix to the artifactId to match the directory name on CI
