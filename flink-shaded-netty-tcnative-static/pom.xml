@@ -34,7 +34,7 @@ under the License.
 
     <properties>
         <!-- This is based on the "tcnative.version" property in the netty root pom-->
-        <netty.tcnative.version>2.0.54.Final</netty.tcnative.version>
+        <netty.tcnative.version>2.0.59.Final</netty.tcnative.version>
     </properties>
 
     <dependencies>
