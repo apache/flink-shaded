@@ -20,5 +20,5 @@ This project bundles the following dependencies under the Apache Software Licens
 - org.apache.curator:curator-client:5.3.0
 - org.apache.curator:curator-framework:5.3.0
 - org.apache.curator:curator-recipes:5.3.0
-- org.apache.zookeeper:zookeeper-jute:3.6.3
-- org.apache.zookeeper:zookeeper:3.6.3
+- org.apache.zookeeper:zookeeper-jute:3.6.4
+- org.apache.zookeeper:zookeeper:3.6.4
