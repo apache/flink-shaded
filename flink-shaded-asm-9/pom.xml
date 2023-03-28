@@ -35,7 +35,7 @@ under the License.
 
     <properties>
         <asm.major.version>9</asm.major.version>
-        <asm.version>${asm.major.version}.3</asm.version>
+        <asm.version>${asm.major.version}.5</asm.version>
     </properties>
 
     <dependencies>
