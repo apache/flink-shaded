@@ -94,7 +94,7 @@ under the License.
                                 <echo message="renaming the complete libnetty library" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
-                                    <mapper type="glob" from="libnetty*" to="liborg_apache_flink_shaded_netty*"/>
+                                    <mapper type="glob" from="libnetty*" to="liborg_apache_flink_shaded_netty4_netty*"/>
                                 </move>
                                 <echo message="repackaging netty jar" />
                                 <jar destfile="${project.build.directory}/${artifactId}-${version}.jar" basedir="${project.build.directory}/unpacked" />
