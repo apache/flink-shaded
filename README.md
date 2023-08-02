@@ -31,7 +31,7 @@ When using these dependencies it is recommended to work directly against the sha
 
 We currently do not release jars containing the shaded sources due to the unanswered legal questions raised [here](https://github.com/apache/flink-shaded/issues/25).
 
-However, it is possible to build these jars locally by cloning the repository and calling `mvn package -Dshade-sources`.
+However, it is possible to build these jars locally by cloning the repository and calling `mvn clean package -Dshade-sources`.
 
 ## About
 
