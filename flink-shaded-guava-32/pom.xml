@@ -34,10 +34,6 @@ under the License.
 
     <packaging>jar</packaging>
 
-    <properties>
-        <guava.version>32.1.3-jre</guava.version>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>
