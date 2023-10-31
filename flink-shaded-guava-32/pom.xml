@@ -29,14 +29,10 @@ under the License.
     </parent>
 
     <artifactId>flink-shaded-guava${flink.ci.license.suffix}</artifactId>
-    <name>flink-shaded-guava-31</name>
+    <name>flink-shaded-guava-32</name>
     <version>${guava.version}-17.0</version>
 
     <packaging>jar</packaging>
-
-    <properties>
-        <guava.version>31.1-jre</guava.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -57,7 +53,7 @@ under the License.
         <profile>
             <id>license-check</id>
             <properties>
-                <flink.ci.license.suffix>-31</flink.ci.license.suffix>
+                <flink.ci.license.suffix>-32</flink.ci.license.suffix>
             </properties>
         </profile>
     </profiles>
@@ -85,7 +81,7 @@ under the License.
                             <relocations>
                                 <relocation>
                                     <pattern>com.google</pattern>
-                                    <shadedPattern>${shading.prefix}.guava31.com.google</shadedPattern>
+                                    <shadedPattern>${shading.prefix}.guava32.com.google</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
