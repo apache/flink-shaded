@@ -8,15 +8,15 @@ This project bundles the following dependencies under the Apache Software Licens
 
 - com.google.guava:guava:27.0.1-jre
 - io.dropwizard.metrics:metrics-core:4.1.12.1
-- io.netty:netty-buffer:4.1.82.Final
-- io.netty:netty-codec:4.1.82.Final
-- io.netty:netty-common:4.1.82.Final
-- io.netty:netty-handler:4.1.82.Final
-- io.netty:netty-resolver:4.1.82.Final
-- io.netty:netty-transport:4.1.82.Final
-- io.netty:netty-transport-classes-epoll:4.1.82.Final
-- io.netty:netty-transport-native-epoll:4.1.82.Final
-- io.netty:netty-transport-native-unix-common:4.1.82.Final
+- io.netty:netty-buffer:4.1.83.Final
+- io.netty:netty-codec:4.1.83.Final
+- io.netty:netty-common:4.1.83.Final
+- io.netty:netty-handler:4.1.83.Final
+- io.netty:netty-resolver:4.1.83.Final
+- io.netty:netty-transport:4.1.83.Final
+- io.netty:netty-transport-classes-epoll:4.1.83.Final
+- io.netty:netty-transport-native-epoll:4.1.83.Final
+- io.netty:netty-transport-native-unix-common:4.1.83.Final
 - org.apache.curator:curator-client:5.3.0
 - org.apache.curator:curator-framework:5.3.0
 - org.apache.curator:curator-recipes:5.3.0
