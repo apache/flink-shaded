@@ -25,12 +25,12 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
-        <version>16.1</version>
+        <version>16.2</version>
     </parent>
 
     <artifactId>flink-shaded-guava${flink.ci.license.suffix}</artifactId>
     <name>flink-shaded-guava-30</name>
-    <version>${guava.version}-16.1</version>
+    <version>${guava.version}-16.2</version>
 
     <packaging>jar</packaging>
 
