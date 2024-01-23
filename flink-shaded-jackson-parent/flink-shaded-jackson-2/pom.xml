@@ -78,7 +78,7 @@ under the License.
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <!-- Jackson uses multi release jars and in case 1.15.x there is version 19
+                <!-- Jackson uses multi release jars and in case 2.15.x there is version 19
                 which is not supported by 3.3.x and below -->
                 <version>3.4.1</version>
                 <executions>
