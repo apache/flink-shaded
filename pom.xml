@@ -133,8 +133,7 @@ under the License.
                                             <version>1.8.0</version>
                                         </requireJavaVersion>
                                         <requireMavenVersion>
-                                            <!-- maven version must be lower than 3.3. See FLINK-3158 -->
-                                            <version>(,3.3)</version>
+                                            <version>[3.8.6]</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>
