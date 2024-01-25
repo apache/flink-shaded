@@ -51,6 +51,6 @@ jobs:
 
       - name: Check licensing
         run: |
-          mvn ${MVN_COMMON_OPTIONS} exec:java@check-licensing -N \
+          mvn ${MVN_COMMON_OPTIONS} exec:java@check-license -N \
             -Dexec.args="${{ env.MVN_BUILD_OUTPUT_FILE }} $(pwd) ${{ env.MVN_VALIDATION_DIR }}" \
             -Dlog4j.configurationFile=file://$(pwd)/tools/ci/log4j.properties
