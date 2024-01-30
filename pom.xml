@@ -218,7 +218,7 @@ under the License.
                     <!-- Used to resolve variables in the 'version' tag -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
-                    <version>1.2.1</version>
+                    <version>1.2.7</version>
                     <executions>
                         <execution>
                             <id>flatten</id>
@@ -341,10 +341,12 @@ under the License.
                         <goals>
                             <goal>java</goal>
                         </goals>
+                        <configuration>
+                            <mainClass>org.apache.flink.tools.ci.licensecheck.LicenseChecker</mainClass>
+                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>org.apache.flink.tools.ci.licensecheck.LicenseChecker</mainClass>
                     <includePluginDependencies>true</includePluginDependencies>
                     <includeProjectDependencies>false</includeProjectDependencies>
                 </configuration>
@@ -352,7 +354,7 @@ under the License.
                     <dependency>
                         <groupId>org.apache.flink</groupId>
                         <artifactId>flink-ci-tools</artifactId>
-                        <version>1.17-SNAPSHOT</version>
+                        <version>1.18.0</version>
                     </dependency>
                 </dependencies>
             </plugin>
