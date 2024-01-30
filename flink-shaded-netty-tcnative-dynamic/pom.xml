@@ -43,7 +43,6 @@ under the License.
             <groupId>io.netty</groupId>
             <artifactId>netty-tcnative</artifactId>
             <version>${netty.tcnative.version}</version>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
     </dependencies>
 

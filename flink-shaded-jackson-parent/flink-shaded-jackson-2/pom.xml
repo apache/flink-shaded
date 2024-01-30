@@ -35,39 +35,32 @@ under the License.
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-csv</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <!--	Java 8 Date/time	-->
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
         <dependency>
             <!--	Java 8 Datatypes	-->
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jdk8</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
     </dependencies>
 

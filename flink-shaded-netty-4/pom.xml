@@ -37,7 +37,6 @@ under the License.
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>${netty.version}</version>
-            <optional>${flink.markBundledAsOptional}</optional>
         </dependency>
     </dependencies>
 

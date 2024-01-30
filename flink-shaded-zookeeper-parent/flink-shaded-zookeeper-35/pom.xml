@@ -41,7 +41,6 @@ under the License.
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
-            <optional>${flink.markBundledAsOptional}</optional>
             <exclusions>
                 <exclusion>
                     <!-- Flink distribution provides logging classes -->
@@ -64,7 +63,6 @@ under the License.
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
             <version>${curator.version}</version>
-            <optional>${flink.markBundledAsOptional}</optional>
             <exclusions>
                 <exclusion>
                     <!-- not relevant at runtime -->
