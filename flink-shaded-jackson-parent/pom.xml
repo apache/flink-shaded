@@ -36,6 +36,9 @@ under the License.
     <modules>
         <module>flink-shaded-jackson-2</module>
         <module>flink-shaded-jackson-module-jsonSchema-2</module>
+        <!-- It's under jackson-parent even though it's not its subproject in order to apply the
+         same jackson shading from the parent pom. This jackson shading is what we're interested in
+         principle, because that way we can configure JsonPath mappings.-->
         <module>flink-shaded-jsonpath</module>
     </modules>
 
