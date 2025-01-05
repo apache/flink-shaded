@@ -6,8 +6,8 @@ The Apache Software Foundation (http://www.apache.org/).
 
 This project bundles the following dependencies under the Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.15.3
-- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3
+- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.2
+- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.2
 - io.swagger.core.v3:swagger-annotations:2.2.19
 - io.swagger.core.v3:swagger-core:2.2.19
 - io.swagger.core.v3:swagger-models:2.2.19
