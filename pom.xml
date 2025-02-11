@@ -65,7 +65,7 @@ under the License.
         <netty.version>4.1.100.Final</netty.version>
         <jackson.version>2.18.2</jackson.version>
         <jsonpath.version>2.9.0</jsonpath.version>
-        <guava.version>32.1.3-jre</guava.version>
+        <guava.version>33.4.0-jre</guava.version>
         <!-- The license check requires the artifactId to match the directory that the module resides in.
              This is not the case for several modules in flink-shaded for legacy reasons.
              This property can be used by modules to add a suffix to the artifactId to match the directory name on CI
@@ -76,7 +76,7 @@ under the License.
     <modules>
         <module>flink-shaded-force-shading</module>
         <module>flink-shaded-asm-9</module>
-        <module>flink-shaded-guava-32</module>
+        <module>flink-shaded-guava-33</module>
         <module>flink-shaded-netty-4</module>
         <module>flink-shaded-netty-tcnative-dynamic</module>
         <module>flink-shaded-jackson-parent</module>
