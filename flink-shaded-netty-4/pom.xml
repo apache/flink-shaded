@@ -25,12 +25,12 @@ under the License.
     <parent>
         <groupId>org.apache.flink</groupId>
         <artifactId>flink-shaded</artifactId>
-        <version>20.0</version>
+        <version>21.0</version>
     </parent>
 
     <artifactId>flink-shaded-netty${flink.ci.license.suffix}</artifactId>
     <name>flink-shaded-netty-4</name>
-    <version>${netty.version}-20.0</version>
+    <version>${netty.version}-21.0</version>
 
     <dependencies>
         <dependency>
