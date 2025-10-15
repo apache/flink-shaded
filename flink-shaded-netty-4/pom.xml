@@ -70,11 +70,35 @@ under the License.
                                 </includes>
                             </artifactSet>
                             <relocations>
+                                <!-- Netty JARs contain a directory called license that conflicts with the LICENSE file
+                                     on case-insensitive filesystems. -->
+                                <relocation>
+                                    <pattern>META-INF/license</pattern>
+                                    <shadedPattern>META-INF/licenses</shadedPattern>
+                                </relocation>
                                 <relocation>
                                     <pattern>io.netty</pattern>
                                     <shadedPattern>${shading.prefix}.netty4.io.netty</shadedPattern>
                                 </relocation>
                             </relocations>
+                            <filters>
+                                <filter>
+                                    <artifact>io.netty:*</artifact>
+                                    <excludes>
+                                        <!-- The contents of the original Netty NOTICE.txt file was manually copied to
+                                             this module's NOTICE file after updating references to BoringSSL and
+                                             updating license paths. -->
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <!-- Netty forgot to update BoringSSL license to Apache 2.0, instead it
+                                             includes a BSD-like license, which is not right for the version of
+                                             BoringSSL used. See https://github.com/netty/netty/issues/15653 for more
+                                             details. -->
+                                        <exclude>META-INF/license/LICENSE.boringssl.txt</exclude>
+                                        <!-- This is the same Apache 2.0 license as Flink has. -->
+                                        <exclude>META-INF/LICENSE.txt</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>

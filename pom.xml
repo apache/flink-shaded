@@ -62,7 +62,7 @@ under the License.
 
     <properties>
         <shading.prefix>org.apache.flink.shaded</shading.prefix>
-        <netty.version>4.1.100.Final</netty.version>
+        <netty.version>4.2.6.Final</netty.version>
         <jackson.version>2.18.2</jackson.version>
         <jsonpath.version>2.9.0</jsonpath.version>
         <guava.version>33.4.0-jre</guava.version>
@@ -79,6 +79,7 @@ under the License.
         <module>flink-shaded-guava-33</module>
         <module>flink-shaded-netty-4</module>
         <module>flink-shaded-netty-tcnative-dynamic</module>
+        <module>flink-shaded-netty-tcnative-static</module>
         <module>flink-shaded-jackson-parent</module>
         <module>flink-shaded-zookeeper-parent</module>
         <module>flink-shaded-swagger</module>
