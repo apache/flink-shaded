@@ -34,7 +34,7 @@ under the License.
 
     <properties>
         <!-- This is based on the "tcnative.version" property in the netty root pom-->
-        <netty.tcnative.version>2.0.59.Final</netty.tcnative.version>
+        <netty.tcnative.version>2.0.74.Final</netty.tcnative.version>
     </properties>
 
     <dependencies>
@@ -124,7 +124,7 @@ under the License.
                             <groupId>io.netty</groupId>
                             <artifactId>netty-tcnative</artifactId>
                             <version>${netty.tcnative.version}</version>
-                            <classifier>linux-aarch_64-fedora</classifier>
+                            <classifier>osx-aarch_64</classifier>
                             <type>jar</type>
                             <overWrite>false</overWrite>
                             <outputDirectory>${project.build.directory}/native_libs</outputDirectory>
@@ -148,7 +148,7 @@ under the License.
                                 <!-- Fix the dynamically linked native libraries in netty-tcnative -->
                                 <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
                                 <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-osx-x86_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
-                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-linux-aarch_64-fedora.jar" dest="${project.build.directory}/native_libs/unpacked/" />
+                                <unzip src="${project.build.directory}/native_libs/netty-tcnative-${netty.tcnative.version}-osx-aarch_64.jar" dest="${project.build.directory}/native_libs/unpacked/" />
                                 <move todir="${project.build.directory}/unpacked/META-INF/native" includeemptydirs="false">
                                     <fileset dir="${project.build.directory}/native_libs/unpacked/META-INF/native"/>
                                     <mapper type="glob" from="lib*" to="liborg_apache_flink_shaded_netty4_*"/>
