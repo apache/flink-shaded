@@ -6,9 +6,9 @@ The Apache Software Foundation (http://www.apache.org/).
 
 This project bundles the following dependencies under the Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-- io.netty:netty-tcnative-classes:2.0.59.Final
-- io.netty:netty-tcnative:2.0.59.Final
-- io.netty:netty-tcnative:linux-aarch_64-fedora:2.0.59.Final
-- io.netty:netty-tcnative:linux-x86_64-fedora:2.0.59.Final
-- io.netty:netty-tcnative:linux-x86_64:2.0.59.Final
-- io.netty:netty-tcnative:osx-x86_64:2.0.59.Final
+- io.netty:netty-tcnative-classes:2.0.74.Final
+- io.netty:netty-tcnative:2.0.74.Final
+- io.netty:netty-tcnative:linux-x86_64-fedora:2.0.74.Final
+- io.netty:netty-tcnative:linux-x86_64:2.0.74.Final
+- io.netty:netty-tcnative:osx-x86_64:2.0.74.Final
+- io.netty:netty-tcnative:osx-aarch_64:2.0.74.Final
