@@ -8,14 +8,14 @@ This project bundles the following dependencies under the Apache Software Licens
 
 - com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.20.1
 - com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.20.1
-- io.swagger.core.v3:swagger-annotations:2.2.19
-- io.swagger.core.v3:swagger-core:2.2.19
-- io.swagger.core.v3:swagger-models:2.2.19
+- io.swagger.core.v3:swagger-annotations:2.2.41
+- io.swagger.core.v3:swagger-core:2.2.41
+- io.swagger.core.v3:swagger-models:2.2.41
 - jakarta.validation:jakarta.validation-api:2.0.2
-- org.apache.commons:commons-lang3:3.13.0
+- org.apache.commons:commons-lang3:3.18.0
 - org.yaml:snakeyaml:2.4
 
 This project bundles the following dependencies under the Eclipse Distribution License 1.0 (https://www.eclipse.org/org/documents/edl-v10.php)
 
-- jakarta.activation:jakarta.activation-api:1.2.1
-- jakarta.xml.bind:jakarta.xml.bind-api:2.3.2
+- jakarta.activation:jakarta.activation-api:1.2.2
+- jakarta.xml.bind:jakarta.xml.bind-api:2.3.3
