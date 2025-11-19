@@ -6,7 +6,7 @@ The Apache Software Foundation (http://www.apache.org/).
 
 This project bundles the following dependencies under the Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-- com.google.guava:guava:33.4.0-jre
+- com.google.guava:guava:33.5.0-jre
 - io.netty:netty-buffer:4.2.6.Final
 - io.netty:netty-codec-base:4.2.6.Final
 - io.netty:netty-common:4.2.6.Final

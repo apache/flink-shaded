@@ -95,6 +95,10 @@ under the License.
                     <artifactId>listenablefuture</artifactId>
                 </exclusion>
                 <exclusion>
+                    <groupId>org.jspecify</groupId>
+                    <artifactId>jspecify</artifactId>
+                </exclusion>
+                <exclusion>
                     <!-- not relevant at runtime -->
                     <groupId>com.google.j2objc</groupId>
                     <artifactId>j2objc-annotations</artifactId>

@@ -65,7 +65,7 @@ under the License.
         <netty.version>4.2.6.Final</netty.version>
         <jackson.version>2.20.1</jackson.version>
         <jsonpath.version>2.10.0</jsonpath.version>
-        <guava.version>33.4.0-jre</guava.version>
+        <guava.version>33.5.0-jre</guava.version>
         <!-- The license check requires the artifactId to match the directory that the module resides in.
              This is not the case for several modules in flink-shaded for legacy reasons.
              This property can be used by modules to add a suffix to the artifactId to match the directory name on CI
