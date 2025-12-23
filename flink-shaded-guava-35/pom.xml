@@ -29,7 +29,7 @@ under the License.
     </parent>
 
     <artifactId>flink-shaded-guava${flink.ci.license.suffix}</artifactId>
-    <name>flink-shaded-guava-33</name>
+    <name>flink-shaded-guava-35</name>
     <version>${guava.version}-21.0</version>
 
     <packaging>jar</packaging>
@@ -53,7 +53,7 @@ under the License.
         <profile>
             <id>license-check</id>
             <properties>
-                <flink.ci.license.suffix>-33</flink.ci.license.suffix>
+                <flink.ci.license.suffix>-35</flink.ci.license.suffix>
             </properties>
         </profile>
     </profiles>
