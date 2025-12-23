@@ -76,7 +76,7 @@ under the License.
     <modules>
         <module>flink-shaded-force-shading</module>
         <module>flink-shaded-asm-9</module>
-        <module>flink-shaded-guava-33</module>
+        <module>flink-shaded-guava-35</module>
         <module>flink-shaded-netty-4</module>
         <module>flink-shaded-netty-tcnative-dynamic</module>
         <module>flink-shaded-netty-tcnative-static</module>
