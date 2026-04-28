@@ -80,6 +80,16 @@ under the License.
                                     <pattern>com.fasterxml.jackson</pattern>
                                     <shadedPattern>${shading.prefix}.jackson2.com.fasterxml.jackson</shadedPattern>
                                 </relocation>
+                                <!--
+                                Manually relocate multi-release classes to the correct shaded package. This is needed
+                                due to a bug in the Maven Shade plugin, which only relocates the content but not
+                                the package structure itself, see https://github.com/apache/maven-shade-plugin/issues/652
+                                -->
+                                <relocation>
+                                    <pattern>META-INF/versions/(\d+)/(.+)/</pattern>
+                                    <shadedPattern>META-INF/versions/$1/${shading.prefix-directory}/jackson2/$2/</shadedPattern>
+                                    <rawString>true</rawString>
+                                </relocation>
                             </relocations>
                         </configuration>
                     </execution>
