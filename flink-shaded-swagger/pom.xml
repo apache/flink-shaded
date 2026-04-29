@@ -33,7 +33,7 @@ under the License.
     <name>flink-shaded-swagger</name>
 
     <properties>
-        <swagger.core.version>2.2.41</swagger.core.version>
+        <swagger.core.version>2.2.49</swagger.core.version>
     </properties>
 
     <dependencies>
