@@ -33,7 +33,7 @@ under the License.
     <name>flink-shaded-swagger</name>
 
     <properties>
-        <swagger.core.version>2.2.41</swagger.core.version>
+        <swagger.core.version>2.2.49</swagger.core.version>
     </properties>
 
     <dependencies>
@@ -55,7 +55,7 @@ under the License.
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
-                <version>2.4</version>
+                <version>2.5</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
