@@ -34,7 +34,7 @@ under the License.
 
     <properties>
         <!-- This is based on the "tcnative.version" property in the netty root pom-->
-        <netty.tcnative.version>2.0.74.Final</netty.tcnative.version>
+        <netty.tcnative.version>2.0.75.Final</netty.tcnative.version>
     </properties>
 
     <dependencies>
@@ -83,19 +83,6 @@ under the License.
                                 <filter>
                                     <artifact>io.netty:*</artifact>
                                     <excludes>
-                                        <!-- The contents of the original Netty NOTICE.txt file was manually copied to
-                                             this module's NOTICE file after updating references to BoringSSL and
-                                             updating license paths. NetBSD license was also removed. -->
-                                        <exclude>META-INF/NOTICE.txt</exclude>
-                                        <!-- Netty forgot to update BoringSSL license to Apache 2.0, instead it
-                                             includes a BSD-like license, which is not right for the version of
-                                             BoringSSL used. See https://github.com/netty/netty/issues/15653 for more
-                                             details. -->
-                                        <exclude>META-INF/license/LICENSE.boringssl.txt</exclude>
-                                        <!-- There are a few lines of code Netty took from NetBSD, but they are not part
-                                        of the normal release, so it's safe to exclude this license.
-                                        See https://github.com/netty/netty-jni-util/issues/20 for more details. -->
-                                        <exclude>META-INF/license/LICENSE.aix-netbsd.txt</exclude>
                                         <!-- This is the same Apache 2.0 license as Flink has. -->
                                         <exclude>META-INF/LICENSE.txt</exclude>
                                     </excludes>
@@ -111,10 +98,11 @@ under the License.
                 <version>1.7</version>
                 <executions>
                     <execution>
-                        <id>rename-native-library</id>
+                        <id>rename-native-library-and-rename-licenses-dir</id>
                         <phase>package</phase>
                         <configuration>
                             <target>
+                                <delete dir="${project.build.directory}/unpacked" />
                                 <echo message="unpacking static tcnative netty jar" />
                                 <unzip src="${project.build.directory}/${artifactId}-${version}.jar" dest="${project.build.directory}/unpacked/" />
                                 <echo message="renaming netty_tcnative library" />
@@ -122,6 +110,14 @@ under the License.
                                     <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
                                     <mapper type="regexp" from="(lib)?netty_tcnative_(.*)" to="\1org_apache_flink_shaded_netty4_netty_tcnative_\2"/>
                                 </move>
+                                <!-- Netty has licenses under directory `license`, but that would conflict with the
+                                     existing `LICENSE` file, so that's renamed in the maven-shade step.
+                                     References to those files are renamed in this step -->
+                                <echo message="updating Netty NOTICE license paths" />
+                                <replace file="${project.build.directory}/unpacked/META-INF/NOTICE" encoding="UTF-8">
+                                    <replacefilter token="license/" value="licenses/"/>
+                                    <replacefilter token="'license' directory" value="'licenses' directory"/>
+                                </replace>
                                 <echo message="repackaging netty jar" />
                                 <jar destfile="${project.build.directory}/${artifactId}-${version}.jar" basedir="${project.build.directory}/unpacked" />
                             </target>
