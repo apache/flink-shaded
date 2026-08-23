@@ -26,7 +26,7 @@ jobs:
       MVN_VALIDATION_DIR: "/tmp/flink-validation-deployment"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
 
       - name: Set JDK
         uses: actions/setup-java@v5
