@@ -27,11 +27,21 @@ Shaded dependencies contained here do not expose any transitive dependencies. Th
 
 When using these dependencies it is recommended to work directly against the shaded namespaces.
 
+## Building
+
+Building requires Apache Maven 3.9.16 and JDK 11. The bundled Maven wrapper downloads and verifies that exact Maven version, so it is the recommended way to build:
+
+```
+./mvnw clean package
+```
+
+The `release` profile enforces this Maven version, so releases must be cut with it as well.
+
 ## Sources
 
 We currently do not release jars containing the shaded sources due to the unanswered legal questions raised [here](https://github.com/apache/flink-shaded/issues/25).
 
-However, it is possible to build these jars locally by cloning the repository and calling `mvn clean package -Dshade-sources`.
+However, it is possible to build these jars locally by cloning the repository and calling `./mvnw clean package -Dshade-sources`.
 
 ## Cryptographic Software Notice
 

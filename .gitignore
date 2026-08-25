@@ -3,3 +3,6 @@
 target
 *.iml
 tools/release
+# Downloaded on demand by mvnw and verified against wrapperSha256Sum;
+# deliberately not checked in, so no binary ships in the source release.
+.mvn/wrapper/maven-wrapper.jar
