@@ -138,7 +138,7 @@ under the License.
                                         <requireMavenVersion>
                                             <!-- Maven version for releasing should match
                                             the Maven version used in CI (and Flink's main repo) -->
-                                            <version>[3.8.6]</version>
+                                            <version>[3.9.16]</version>
                                         </requireMavenVersion>
                                     </rules>
                                 </configuration>

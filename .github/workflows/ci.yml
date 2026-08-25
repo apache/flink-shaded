@@ -35,22 +35,33 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Set Maven 3.8.6
-        uses: stCarolas/setup-maven@v5.1
-        with:
-          maven-version: 3.8.6
-
       - name: Build
         run: |
           set -o pipefail
 
-          mvn clean deploy ${{ env.MVN_COMMON_OPTIONS }} \
+          ./mvnw clean deploy ${{ env.MVN_COMMON_OPTIONS }} \
             -DaltDeploymentRepository=validation_repository::default::file:${{ env.MVN_VALIDATION_DIR }} \
              -Plicense-check \
             | tee ${{ env.MVN_BUILD_OUTPUT_FILE }}
 
+      # Maven 3.9 prints mojo banners using the plugin's goal prefix
+      # ("deploy:2.8.2:deploy") rather than its artifactId
+      # ("maven-deploy-plugin:2.8.2:deploy"). flink-ci-tools' DeployParser and
+      # DependencyParser match on the artifactId spelling, so on Maven 3.9 they
+      # match nothing and the NOTICE check silently degrades to a no-op that
+      # still exits 0. Rewrite the two affected banners back to the 3.8 spelling.
+      # Remove this step once flink-ci-tools is bumped to a release containing
+      # the parser fix from FLINK-40459.
+      - name: Normalize Maven 3.9 mojo banners for the license checker
+        run: |
+          sed -E \
+            -e 's/^(\[INFO\] --- )deploy:/\1maven-deploy-plugin:/' \
+            -e 's/^(\[INFO\] --- )dependency:/\1maven-dependency-plugin:/' \
+            ${{ env.MVN_BUILD_OUTPUT_FILE }} > ${{ env.MVN_BUILD_OUTPUT_FILE }}.normalized
+          mv ${{ env.MVN_BUILD_OUTPUT_FILE }}.normalized ${{ env.MVN_BUILD_OUTPUT_FILE }}
+
       - name: Check licensing
         run: |
-          mvn ${MVN_COMMON_OPTIONS} exec:java@check-license -N \
+          ./mvnw ${MVN_COMMON_OPTIONS} exec:java@check-license -N \
             -Dexec.args="${{ env.MVN_BUILD_OUTPUT_FILE }} $(pwd) ${{ env.MVN_VALIDATION_DIR }}" \
             -Dlog4j.configurationFile=file://$(pwd)/tools/ci/log4j.properties
