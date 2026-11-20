@@ -64,7 +64,7 @@ under the License.
         <shading.prefix>org.apache.flink.shaded</shading.prefix>
         <shading.prefix-directory>org/apache/flink/shaded</shading.prefix-directory>
         <netty.version>4.2.19.Final</netty.version>
-        <jackson.version>2.22.2</jackson.version>
+        <jackson.version>2.22.4</jackson.version>
         <jsonpath.version>2.10.0</jsonpath.version>
         <guava.version>33.7.1-jre</guava.version>
         <!-- The license check requires the artifactId to match the directory that the module resides in.
