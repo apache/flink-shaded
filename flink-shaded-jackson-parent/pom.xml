@@ -70,6 +70,17 @@ under the License.
                                     <include>com.fasterxml.jackson.*:*</include>
                                 </includes>
                             </artifactSet>
+                            <!-- The attributions of the bundled code are written out in this module's NOTICE. -->
+                            <filters>
+                                <filter>
+                                    <artifact>com.fasterxml.jackson.*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE</exclude>
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <exclude>META-INF/NOTICE.md</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <relocations>
                                 <relocation>
                                     <!-- This needs to match flink-shaded-swagger -->

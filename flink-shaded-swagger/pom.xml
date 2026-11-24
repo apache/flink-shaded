@@ -85,6 +85,41 @@ under the License.
                                     <exclude>com.fasterxml.jackson.core:*</exclude>
                                 </excludes>
                             </artifactSet>
+                            <!-- The attributions of the bundled code are written out in this module's NOTICE. -->
+                            <filters>
+                                <filter>
+                                    <artifact>com.fasterxml.jackson.*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE</exclude>
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <exclude>META-INF/NOTICE.md</exclude>
+                                    </excludes>
+                                </filter>
+                                <filter>
+                                    <artifact>io.swagger.core.v3:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE</exclude>
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <exclude>META-INF/NOTICE.md</exclude>
+                                    </excludes>
+                                </filter>
+                                <filter>
+                                    <artifact>jakarta.*:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE</exclude>
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <exclude>META-INF/NOTICE.md</exclude>
+                                    </excludes>
+                                </filter>
+                                <filter>
+                                    <artifact>org.apache.commons:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE</exclude>
+                                        <exclude>META-INF/NOTICE.txt</exclude>
+                                        <exclude>META-INF/NOTICE.md</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <relocations>
                                 <relocation>
                                     <!-- This needs to match the relocation pattern of flink-shaded-jackson -->
