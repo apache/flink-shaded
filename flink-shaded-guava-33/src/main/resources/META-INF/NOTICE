@@ -8,3 +8,8 @@ This project bundles the following dependencies under the Apache Software Licens
 
 - com.google.guava:guava:33.7.1-jre
 - com.google.guava:failureaccess:1.0.3
+
+Guava contains the following public domain code:
+
+Code written by Doug Lea with assistance from members of JCP JSR-166 Expert Group
+MurmurHash3, written by Austin Appleby
