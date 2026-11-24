@@ -64,6 +64,15 @@ under the License.
                                     <include>*</include>
                                 </includes>
                             </artifactSet>
+                            <filters>
+                                <filter>
+                                    <!-- ZooKeeper's notice is in each module's NOTICE. -->
+                                    <artifact>org.apache.zookeeper:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE*</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <relocations>
                                 <relocation>
                                     <pattern>org.apache.zookeeper</pattern>
