@@ -69,6 +69,17 @@ under the License.
                                     <include>io.netty:*</include>
                                 </includes>
                             </artifactSet>
+                            <!-- Netty's notices and the licences of the bundled code are in this module's resources. -->
+                            <filters>
+                                <filter>
+                                    <artifact>io.netty:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE*</exclude>
+                                        <exclude>META-INF/LICENSE*</exclude>
+                                        <exclude>META-INF/license/**</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <relocations>
                                 <relocation>
                                     <pattern>io.netty</pattern>
