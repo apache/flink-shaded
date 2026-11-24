@@ -41,3 +41,42 @@ This project bundles the following dependencies under the Apache Software Licens
 - io.netty:netty-transport-sctp:4.1.128.Final
 - io.netty:netty-transport-udt:4.1.128.Final
 - io.netty:netty-transport:4.1.128.Final
+
+The Netty Project
+Copyright 2014 The Netty Project
+
+Netty contains code from the following projects under the Apache Software License 2.0:
+
+Apache Harmony
+Copyright 2006, 2010 The Apache Software Foundation.
+This product includes software developed at The Apache Software Foundation (https://www.apache.org/).
+
+Apache Commons Lang
+This product includes software developed at The Apache Software Foundation (https://www.apache.org/).
+
+JCTools, Java Concurrency Tools for the JVM, by Nitsan Wakart
+
+HPACK
+Copyright 2014 Twitter, Inc.
+
+Netty contains code from the following projects under the MIT license. See bundled license files for details.
+
+SLF4J, Copyright (c) 2004-2011 QOS.ch
+jbzip2, Copyright (c) 2010-2011 Matthew J. Francis and Contributors of the jbzip2 Project
+libdivsufsort, Copyright (c) 2003-2008 Yuta Mori
+jfastlz, Copyright (c) 2009 William Kinney
+hyper-hpack, Copyright (c) 2014 Cory Benfield
+nghttp2 HPACK, Copyright (c) 2012, 2014, 2015, 2016 Tatsuhiro Tsujikawa and nghttp2 contributors
+UTF-8 decoder in Utf8Validator, Copyright (c) 2008-2009 Bjoern Hoehrmann
+
+Netty contains code from the following projects under the BSD license. See bundled license files for details.
+
+Webbit, Copyright (c) 2011, Joe Walnes, Aslak Hellesøy and contributors
+Protocol Buffers, Copyright 2013 Google Inc.
+
+The macOS DNS resolver native libraries contain dnsinfo.h, Copyright (c) 2004-2006, 2008, 2009, 2011 Apple Inc., under the Apple Public Source License 2.0. Its Source Code is available under the terms of that license at https://github.com/apple-oss-distributions/configd. See bundled license files for details.
+
+Netty contains the following public domain code:
+
+Extensions to the Java Collections Framework derived from the works of the JSR-166 Expert Group, Doug Lea and Jason T. Greene
+Robert Harder's Base64 encoder and decoder
