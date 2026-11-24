@@ -37,6 +37,21 @@ under the License.
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
             <version>${netty.version}</version>
+            <exclusions>
+                <!-- Flink uses neither QUIC nor HTTP/3. The QUIC natives statically link BoringSSL and quiche. -->
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-http3</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-classes-quic</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-native-quic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
@@ -69,27 +84,23 @@ under the License.
                                     <include>io.netty:*</include>
                                 </includes>
                             </artifactSet>
+                            <filters>
+                                <filter>
+                                    <!-- Netty's notices and the licences of the bundled code are in this module's resources. -->
+                                    <artifact>io.netty:*</artifact>
+                                    <excludes>
+                                        <exclude>META-INF/NOTICE*</exclude>
+                                        <exclude>META-INF/LICENSE*</exclude>
+                                        <exclude>META-INF/license/**</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                             <relocations>
-                                <!-- Netty JARs contain a directory called license that conflicts with the LICENSE file
-                                     on case-insensitive filesystems. -->
-                                <relocation>
-                                    <pattern>META-INF/license</pattern>
-                                    <shadedPattern>META-INF/licenses</shadedPattern>
-                                </relocation>
                                 <relocation>
                                     <pattern>io.netty</pattern>
                                     <shadedPattern>${shading.prefix}.netty4.io.netty</shadedPattern>
                                 </relocation>
                             </relocations>
-                            <filters>
-                                <filter>
-                                    <artifact>io.netty:*</artifact>
-                                    <excludes>
-                                        <!-- This is the same Apache 2.0 license as Flink has. -->
-                                        <exclude>META-INF/LICENSE.txt</exclude>
-                                    </excludes>
-                                </filter>
-                            </filters>
                         </configuration>
                     </execution>
                 </executions>
@@ -100,7 +111,7 @@ under the License.
                 <version>1.7</version>
                 <executions>
                     <execution>
-                        <id>rename-native-library-and-rename-licenses-dir</id>
+                        <id>rename-native-library</id>
                         <phase>package</phase>
                         <configuration>
                             <target>
@@ -112,14 +123,6 @@ under the License.
                                     <fileset dir="${project.build.directory}/unpacked/META-INF/native"/>
                                     <mapper type="glob" from="libnetty*" to="liborg_apache_flink_shaded_netty4_netty*"/>
                                 </move>
-                                <!-- Netty has licenses under directory `license`, but that would conflict with the
-                                     existing `LICENSE` file, so that's renamed in the maven-shade step.
-                                     References to those files are renamed in this step -->
-                                <echo message="updating Netty NOTICE license paths" />
-                                <replace file="${project.build.directory}/unpacked/META-INF/NOTICE" encoding="UTF-8">
-                                    <replacefilter token="license/" value="licenses/"/>
-                                    <replacefilter token="'license' directory" value="'licenses' directory"/>
-                                </replace>
                                 <echo message="repackaging netty jar" />
                                 <jar destfile="${project.build.directory}/${artifactId}-${version}.jar" basedir="${project.build.directory}/unpacked" />
                             </target>
