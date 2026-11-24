@@ -66,13 +66,11 @@ and source code.
 The following provides more details on the included cryptographic
 software:
 
-  * Apache Flink Shaded publishes flink-shaded-netty-tcnative-dynamic
-    (linking against a system-provided OpenSSL) and
-    flink-shaded-netty-tcnative-static (embedding Google's BoringSSL
-    library) as convenience binaries on Maven Central, for use as
-    Apache Flink's optional OpenSSL-based SSL engine. The source
-    release contains build scripts only; the cryptographic libraries
-    are included in the compiled artifacts.
+  * Apache Flink Shaded publishes flink-shaded-netty-tcnative-dynamic,
+    which links against a system-provided OpenSSL, as a convenience
+    binary on Maven Central, for use as Apache Flink's optional
+    OpenSSL-based SSL engine. The source release contains build
+    scripts only.
 
 ## About
 
