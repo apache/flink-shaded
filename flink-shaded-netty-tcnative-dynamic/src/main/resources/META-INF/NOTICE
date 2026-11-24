@@ -12,3 +12,12 @@ This project bundles the following dependencies under the Apache Software Licens
 - io.netty:netty-tcnative:linux-x86_64-fedora:2.0.86.Final
 - io.netty:netty-tcnative:linux-x86_64:2.0.86.Final
 - io.netty:netty-tcnative:osx-x86_64:2.0.86.Final
+
+The Netty Project
+Copyright 2016 The Netty Project
+
+netty-tcnative is a fork of the Apache Tomcat Native Library:
+
+Apache Tomcat Native Library
+Copyright 2002-2015 The Apache Software Foundation
+This product includes software developed at The Apache Software Foundation (http://www.apache.org/).
