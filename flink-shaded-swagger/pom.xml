@@ -54,6 +54,12 @@ under the License.
                 <version>2.0</version>
             </dependency>
             <dependency>
+                <!-- swagger-core 2.2.8 depends on 3.12.0, which is affected by CVE-2025-48924 -->
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.22.0</version>
+            </dependency>
+            <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
                 <version>${jackson.version}</version>

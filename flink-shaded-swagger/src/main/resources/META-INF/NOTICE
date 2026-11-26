@@ -6,13 +6,13 @@ The Apache Software Foundation (http://www.apache.org/).
 
 This project bundles the following dependencies under the Apache Software License 2.0 (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.2
-- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.2
+- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.18.12
+- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.18.12
 - io.swagger.core.v3:swagger-annotations:2.2.8
 - io.swagger.core.v3:swagger-core:2.2.8
 - io.swagger.core.v3:swagger-models:2.2.8
 - jakarta.validation:jakarta.validation-api:2.0.2
-- org.apache.commons:commons-lang3:3.12.0
+- org.apache.commons:commons-lang3:3.22.0
 - org.yaml:snakeyaml:2.0
 
 This project bundles the following dependencies under the Eclipse Distribution License 1.0 (https://www.eclipse.org/org/documents/edl-v10.php)
@@ -24,8 +24,8 @@ Swagger Core
 Copyright (c) 2015. SmartBear Software Inc.
 
 Jackson JSON processor
-It was originally written by Tatu Saloranta (tatu.saloranta@iki.fi), and has been in development since 2007. It is currently developed by a community of developers.
+Copyright 2007-, Tatu Saloranta (tatu.saloranta@iki.fi)
 
 Apache Commons Lang
-Copyright 2001-2021 The Apache Software Foundation
+Copyright 2001-2026 The Apache Software Foundation
 This product includes software developed at The Apache Software Foundation (https://www.apache.org/).
