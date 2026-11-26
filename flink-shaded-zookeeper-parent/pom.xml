@@ -42,7 +42,20 @@ under the License.
     <properties>
         <shading.zookeeper.prefix>${shading.prefix}.zookeeper3</shading.zookeeper.prefix>
         <shading.curator.prefix>${shading.prefix}.curator5</shading.curator.prefix>
+        <!-- The Guava version that Curator gets, relocated with Curator. flink-shaded-guava-31
+             keeps its own Guava version, because its version is part of its package names. -->
+        <curator.guava.version>33.8.0-jre</curator.guava.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${curator.guava.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
